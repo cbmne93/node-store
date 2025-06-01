@@ -7,7 +7,7 @@ export class CustomError extends Error {
     super(message);
   }
 
-  static badRequets(message: string) {
+  static badRequest(message: string) {
     return new CustomError(400, message);
   }
   static unauthorized(message: string) {
